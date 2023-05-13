@@ -1,177 +1,87 @@
 doctype html
-html
+html(lang='en-us')
   head
-    title
-    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+    meta(charset='utf-8')
+    style.
+      form {
+      transition: 600ms ease all;
+      font-family: "Crete Round", sans-serif;
+      font-weight: 400;
+      color: #000000;
+      /* Centrar el formulario en la página */
+      margin: 0 auto;
+      width: 400px;
+      /* Esquema del formulario */
+      padding: 2em;
+      border: 10px solid rgb(10, 184, 214);
+      border-radius: 1em;
+      background: linear-gradient(to right, rgb(10, 184, 214), rgba(243, 51, 3, 0));
+      }
+      body {
+      display: block;
+      margin: 150px;
+      background-image: url(https://img.lovepik.com/background/20211022/large/lovepik-summer-gradient-background-image_401765887.jpg);
+      background-size: 100%;
+      }
+      ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
+      form li + li {
+      margin-top: 1em;
+      }
+      label {
+      /* Tamaño y alineación uniforme */
+      display: inline-block;
+      width: 75px;
+      text-align: right;
+      }
+      input,
+      textarea {
+      font: 1em sans-serif;
+      /* Tamaño de texto */
+      width: 270px;
+      box-sizing: border-box;
+      border: 1px solid #0b07e4;
+      }
+      input:focus,
+      textarea:focus {
+      /* Destacado adicional para elementos que tienen el cursor */
+      border-color: #1406db;
+      }
+      textarea {
+      /* Alinear texto */
+      vertical-align: top;
+      height: 5em;
+      }
+      /*botón*/
+      .button {
+      padding-left: 86px;
+      }
+      button {
+      margin-left: .5rem;
+      background-color: rgb(102, 216, 245);
+      border-radius: 1em;
+      }
+    title Fomulario
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' referrerpolicy='no-referrer')
   body
-    .resume-box
-      .left-section
-        .profile
-          img.profile-img(src='images/profile2.png')
-          .blue-box
-        h2.name
-          | Armando
-          br
-          span Delgado
-        p.n-p Graphic & Web Designer
-        .info
-          p.heading Info
-          p.p1
-            span.span1
-              img(src='images/location.png')
-            | Dirección
-            span
-              br
-              | Av- Bolivar
-              | 						SJM
-          p.p1
-            span.span1
-              img(src='images/call.png')
-            | Telefono
-            span
-              br
-              | +58
-              | 						4243135915
-          p.p1
-            span.span1
-              img(src='images/mail.png')
-            | Gmail
-            span
-              br
-              | armando.delgado.
-          p.p1
-            span.span1
-              img(src='images/domain.png')
-            | Website
-            span
-              br
-              | www.'ajds.com
-        .info
-          p.heading Social
-          p.p1
-            span.span1
-              img(src='images/youtube.png')
-            | Youtube
-            span
-              br
-              | armando
-              | 						ajds'
-          p.p1
-            span.span1
-              img(src='images/twitter.png')
-            | Twitter
-            span
-              br
-              | ajds'twitter.com
-          p.p1
-            span.span1
-              img(src='images/linkedin.png')
-            | Linkdin
-            span
-              br
-              | linkdin'ajds.com
-          p.p1
-            span.span1
-              img(src='images/facebook.png')
-            | Facebook
-            span
-              br
-              | facebookArmando.com
-      .right-section
-        .right-heading
-          img(src='images/user.png')
-          p.p2 Perfil
-        p.p3
-          | Armando Delgado, 22 años, Actual estudiante de ingenieria informática en UNERG,
-          | Deportista, selección de Guarico en lucha Olimpica estilo grecorromana, con Experiencia Laboral en
-          | diferentes ambitos.
-        .clearfix
-        br
-        br
-        .right-heading
-          img(src='images/pencil.png')
-          p.p2 Experiencia Laboral
-        .clearfix
-        .lr-box
-          .left
-            p.p4 2018 - 2019
-            p.p5 Barranquilla
-          .right
-            p.p4 Ayudante de Mesonero
-            p.p5 Restaurante 4 estrellas
-            p.p5
-              | Durante mi travesia por Colombia-Barranquilla Trabajando en Restaurante Kilimandiaro
-          .clearfix
-        .lr-box
-          .left
-            p.p4 2019 - 2021
-            p.p5 Barranquilla
-          .right
-            p.p4 Mesonero
-            p.p5 Restaurante 4 estrellas
-            p.p5
-              | Despues de ser ayudante empiezo como Mesonero en 2019 hasta 2021, regreso a Venezuela.
-          .clearfix
-        .lr-box
-          .left
-            p.p4 2021 - Actualmente
-            p.p5 Venezuela
-          .right
-            p.p4 Jardinero
-            p.p5 Independiente
-            p.p5 Actual trabajo en tiempos libres.
-          .clearfix
-        br
-        .right-heading
-          img(src='images/edu.png')
-          p.p2 Educación
-        .clearfix
-        .lr-box
-          .left
-            p.p4 2013 - 2018
-            p.p5 Guarico
-          .right
-            p.p4 UEN - Cabrera Malo.
-            p.p5 Secundaria
-            p.p5 Despues de primara en vicente peña, Cursé en Rafael Cabrera Malo 
-          .clearfix
-        .lr-box
-          .left
-            p.p4 2022 - Actualmente
-            p.p5 Guarico
-          .right
-            p.p4 UNERG.
-            p.p5 Universida Romulo Gallegos.
-            p.p5
-              | Actualmente estudiando tercer semestre
-            p.p4 Ing Informática
-            p
-          .clearfix
-        br
-        .right-heading
-          img(src='images/edu.png')
-          p.p2 Habilidad y Experiencia
-        .clearfix
-        .s-box
-          p.p6 Python
-          #progress
-          p.p6 Javascript
-          #progress1
-        .s-box
-          p.p6 HTML
-          #progress2
-          p.p6 CSS
-          #progress3
-        .clearfix
-        br
-        br
-        .right-heading
-          img(src='images/hobbies.png')
-          p.p2 Pasatiempos
-        .clearfix
-        img.h-img(src='images/bicycle.png')
-        img.h-img(src='images/games.png')
-        img.h-img(src='images/book.png')
-        img.h-img(src='images/design.png')
-        img.h-img(src='images/chess.png')
-      .clearfix
+    form(action='/my-handling-form-page' method='post')
+      ul
+        li
+          i.fa-solid.fa-user
+          label(for='name') Nombre:
+          input#name(type='text' name='user_name')
+        li
+          i.fa-solid.fa-envelope
+          label(for='mail') E-mail:
+          input#mail(type='email' name='user_mail')
+        li
+          i.fa-solid.fa-square-envelope
+          label(for='msg') Mensaje:
+          textarea#msg(name='user_message')
+        li.button
+          button(type='submit')
+            | Enviar mensaje 
+            i.fa-solid.fa-check
