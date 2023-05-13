@@ -13,7 +13,7 @@ router.post('/', function(req, res, next)  {
   let date = new Date();
   let ip = req.ip;
   
-  db.insert(name, email, coment, date,ip);
+  db.insert(name, email, coment, date, ip);
 
   res.redirect('/')
 });
