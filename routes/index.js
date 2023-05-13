@@ -6,6 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 router.post('/', function(req, res, next)  { 
+  let email = req.body.email;
+  let name = req.body.name;
+  let coment = req.body.coment;
+  
+  console.log({name, email, coment}) 
+
   res.redirect('/')
 });
 
