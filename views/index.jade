@@ -66,6 +66,15 @@ html(lang='en-us')
       }
     title Fomulario
     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+    script(src='https://www.google.com/recaptcha/api.js' async='' defer='')
+    
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-5X1FCN2TGR')
+    script.
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'G-5X1FCN2TGR');
+    
   body
     form(action='/' method='post')
       ul
@@ -76,11 +85,14 @@ html(lang='en-us')
         li
           i.fa-solid.fa-envelope
           label(for='mail') E-mail:
-          input#mail(type='email' name='email')
+          input#email(type='email' name='email')
         li
           i.fa-solid.fa-square-envelope
-          label(for='msg') Mensaje:
-          textarea#msg(name='coment')
+          label(for='comment') Mensaje:
+          textarea#comment(name='comment')
+          
+        .g-recaptcha(data-sitekey='6LdBamAmAAAAAL5O0LZ6Ra2XqQWG_Z21fipfPuol')
+        
         li.button
           button(type='submit')
             | Enviar mensaje 
