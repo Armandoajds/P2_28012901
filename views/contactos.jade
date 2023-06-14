@@ -1,0 +1,29 @@
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='stylesheets/style.css')
+    title Contactos
+body
+    h4
+      a(href='/logout') Logout
+               <% for (const obtener of tarea) { %>
+                         <% } %>
+    table
+      thead
+        tr
+          th Nombre
+          th Email
+          th Comentario
+          th Fecha-Hora
+          th IP
+          th Pais
+      tbody
+        tr
+          th <%= obtener.nombre%>
+          td <%= obtener.email%>
+          td <%= obtener.comentario%>
+          td <%= obtener.fecha%>
+          td <%= obtener.ip%>
+          td <%= obtener.pais%>
