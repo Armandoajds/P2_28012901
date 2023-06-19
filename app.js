@@ -22,6 +22,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.get('/index', function(req, res) {
+  res.render('index');
+});
+app.get('/ingles', function(req, res) {
+  res.render('ingles');
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -39,3 +46,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+app.get('/ingles', function(req, res) {
+  res.render('ingles');
+});

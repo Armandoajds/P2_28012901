@@ -240,3 +240,100 @@ body{
     width: 45px;
     margin-right: 45px;
 }
+.contact-btn {
+    background-color: #16d9e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-btn:hover {
+    background-color: #07b12c;
+ }
+/* Estilos para el botón desplegable */
+.dropdown-center .btn-secondary {
+    background-color: #0f7edf;
+    border-color: #6c757d;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-center .btn-secondary:hover {
+    background-color: #3194e0;
+    border-color: #1988dd;
+  }
+  
+  /* Estilos para el menú desplegable */
+
+  
+  .dropdown-menu a {
+    color: #0fd7f1;
+    text-decoration: none;
+    padding: 0;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+    color: #101111;
+  }
+  
+  .dropdown-menu .active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .dropdown-menu .active:hover {
+    background-color: #82b3e7;
+    color: #fff;
+  }
+  .language-selector {
+    display: flex;
+  }
+  
+  .language-link {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+  
+  .language-link.active {
+    background-color: #007bff;
+  }
+  
+  .language-link[data-lang="es"] {
+    background-color: #c1002f;
+  }
+  
+  .language-link[data-lang="en"] {
+    background-color: #00247d;
+  }
+  
+  .language-link[data-lang="es"]::before,
+  .language-link[data-lang="en"]::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-size: contain;
+  }
+  
+  .language-link[data-lang="es"]::before {
+    background-image: url("https://www.flaticon.es/svg/static/icons/svg/197/197374.svg");
+  }
+  
+  .language-link[data-lang="en"]::before {
+    background-image: url("https://www.flaticon.es/svg/static/icons/svg/197/197604.svg");
+  }
